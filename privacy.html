@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Relayr FM</title>
+<meta name="description" content="What Relayr FM collects, how long it keeps it, and who else is involved.">
+<meta name="theme-color" content="#0E0A05">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0E0A05;--bg-2:#140E07;--surface:#1B130A;
+    --line:rgba(255,236,210,.08);--line-2:rgba(255,236,210,.14);
+    --amber:#FF9D00;--amber-hi:#FFB740;--amber-deep:#C26F00;
+    --text:#FBF6EE;--text-2:#C9BBA6;--text-3:#8E7F6A;
+    --display:"Bricolage Grotesque","Manrope",system-ui,sans-serif;
+    --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --wrap:72rem;--gutter:clamp(1.1rem,4vw,2.5rem);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--bg);color:var(--text);font:500 17px/1.7 var(--body);-webkit-font-smoothing:antialiased}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:-.02em;line-height:1.1;font-weight:700;text-wrap:balance}
+  p{margin:0;text-wrap:pretty}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gutter)}
+  :focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+
+  .btn{display:inline-flex;align-items:center;gap:.6rem;font:700 .92rem/1 var(--body);text-decoration:none;
+    padding:.7rem 1.15rem;border-radius:999px;white-space:nowrap;transition:transform .15s ease, box-shadow .2s ease}
+  .btn-primary{background:linear-gradient(180deg,var(--amber-hi),var(--amber));color:#1E1200;
+    box-shadow:0 1px 0 rgba(255,255,255,.35) inset, 0 10px 30px -8px rgba(255,157,0,.55)}
+  .btn-primary:hover{transform:translateY(-1px)}
+  .btn svg{width:1.1em;height:1.1em}
+
+  .nav{position:sticky;top:0;z-index:50;background:rgba(14,10,5,.72);
+    backdrop-filter:saturate(140%) blur(16px);-webkit-backdrop-filter:saturate(140%) blur(16px);
+    border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;gap:1rem;height:4.25rem}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font:700 1.15rem/1 var(--display);letter-spacing:-.01em}
+  .brand img{width:2.1rem;height:2.1rem;border-radius:9px}
+  .nav-links{margin-left:auto;display:flex;align-items:center;gap:.4rem}
+  .nav-links a:not(.btn){color:var(--text-2);text-decoration:none;font-weight:600;font-size:.95rem;padding:.55rem .85rem;border-radius:999px}
+  .nav-links a:not(.btn):hover{color:var(--text);background:rgba(255,236,210,.06)}
+  .nav .btn{margin-left:.4rem}
+  @media (max-width:52rem){ .nav-links a:not(.btn){display:none} }
+
+  /* ---------- document ---------- */
+  .doc-head{padding-block:clamp(3rem,7vw,5rem) 2.2rem;position:relative}
+  .doc-head::before{content:"";position:absolute;z-index:-1;inset:-6rem 0 auto auto;width:min(46rem,100vw);aspect-ratio:1;
+    background:radial-gradient(closest-side, rgba(255,157,0,.16), transparent 70%)}
+  .doc-head h1{font-size:clamp(2.6rem,6vw,4.4rem);font-weight:800;letter-spacing:-.026em}
+  .doc-head .meta{margin-top:.9rem;color:var(--text-3);font-size:.95rem}
+  .doc-head .switch{margin-top:1.2rem;color:var(--text-2);font-size:.95rem}
+  .doc-head .switch a{color:var(--amber-hi);text-underline-offset:3px}
+
+  .short{margin-top:2rem;max-width:44rem;border-radius:20px;padding:1.5rem 1.6rem 1.6rem;
+    background:linear-gradient(180deg,rgba(255,157,0,.09),rgba(255,157,0,.03));
+    box-shadow:0 0 0 1px rgba(255,157,0,.22) inset}
+  .short h2{font-size:1.15rem;letter-spacing:-.01em}
+  .short ul{margin:.85rem 0 0;padding:0;list-style:none;display:grid;gap:.55rem}
+  .short li{position:relative;padding-left:1.6rem;color:var(--text)}
+  .short li::before{content:"";position:absolute;left:.15rem;top:.62em;width:.5rem;height:.5rem;border-radius:50%;background:var(--amber)}
+
+  .doc{display:grid;grid-template-columns:15rem minmax(0,44rem);gap:clamp(2rem,5vw,4.5rem);
+    padding-block:1.5rem clamp(4rem,8vw,6rem);align-items:start}
+  @media (max-width:64rem){ .doc{grid-template-columns:minmax(0,44rem)} .toc{display:none} }
+
+  .toc{position:sticky;top:6rem}
+  .toc h2{font:700 .82rem/1 var(--body);color:var(--text-3);letter-spacing:0;margin-bottom:.8rem}
+  .toc ol{margin:0;padding:0;list-style:none;display:grid;gap:.15rem;counter-reset:t}
+  .toc li{counter-increment:t}
+  .toc a{display:flex;gap:.6rem;text-decoration:none;color:var(--text-2);font-size:.92rem;font-weight:600;
+    padding:.38rem .6rem;border-radius:8px;line-height:1.35}
+  .toc a::before{content:counter(t);color:var(--text-3);font-variant-numeric:tabular-nums;min-width:1.1rem}
+  .toc a:hover{color:var(--text);background:rgba(255,236,210,.05)}
+
+  article{counter-reset:s}
+  article section{padding-block:1.9rem;border-top:1px solid var(--line);scroll-margin-top:5.5rem}
+  article section:first-child{border-top:0;padding-top:.4rem}
+  article h2{font-size:clamp(1.45rem,2.4vw,1.75rem);counter-increment:s;display:flex;gap:.7rem;align-items:baseline}
+  article h2::before{content:counter(s);font:700 .95rem/1 var(--body);color:var(--amber);min-width:1.2rem}
+  article h3{font-size:1.08rem;margin-top:1.4rem;letter-spacing:-.01em}
+  article p,article ul{margin-top:.9rem;color:var(--text-2)}
+  article ul{padding-left:1.2rem;display:grid;gap:.45rem}
+  article li::marker{color:var(--amber)}
+  article strong{color:var(--text);font-weight:700}
+  article a{color:var(--amber-hi);text-underline-offset:3px;text-decoration-thickness:1px}
+  article code{font:600 .9em ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--amber-hi);
+    background:rgba(255,157,0,.1);padding:.08rem .35rem;border-radius:5px}
+
+  footer{border-top:1px solid var(--line);padding-block:2.2rem 3rem;color:var(--text-3);font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 2rem}
+  footer .brand{font-size:1rem;color:var(--text)}
+  footer .brand img{width:1.7rem;height:1.7rem;border-radius:7px}
+  footer nav{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-left:auto}
+  footer nav a{text-decoration:none;color:var(--text-2)}
+  footer nav a:hover,footer nav a[aria-current]{color:var(--text)}
+  footer .legal{flex-basis:100%;font-size:.82rem;line-height:1.6}
+  .skip{position:absolute;left:-9999px;top:.6rem;z-index:200;background:var(--amber);color:#1E1200;padding:.6rem 1rem;border-radius:999px;font-weight:700}
+  .skip:focus{left:var(--gutter)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+</defs></svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo.png" alt="" width="34" height="34"><span>Relayr FM</span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#commands">Commands</a>
+      <a href="index.html#faq">FAQ</a>
+      <!-- PLACEHOLDER: same invite URL as on index.html -->
+      <a class="btn btn-primary" href="PASTE-INVITE-URL"><svg aria-hidden="true"><use href="#i-plus"/></svg>Add to Discord</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap doc-head">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 8 October 2026</p>
+    <p class="switch">See also the <a href="terms.html">Terms of Service</a>.</p>
+    <div class="short">
+      <h2>The short version</h2>
+      <ul>
+          <li>Relayr can’t read your messages, and it never hears anyone in voice. It joins deafened.</li>
+          <li>The queue is kept in memory only while music is playing, then forgotten.</li>
+          <li>Song audio is downloaded briefly so it plays smoothly, then deleted.</li>
+          <li>No database, no ads, no tracking, and nothing is sold.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap doc">
+    <nav class="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <ol>
+          <li><a href="#about">Who this covers</a></li>
+          <li><a href="#collect">What the bot uses</a></li>
+          <li><a href="#keep">How long it’s kept</a></li>
+          <li><a href="#share">Who else is involved</a></li>
+          <li><a href="#website">This website</a></li>
+          <li><a href="#choices">Your choices</a></li>
+          <li><a href="#children">Age requirements</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+    <article>
+      <section id="about">
+        <h2>Who this covers</h2>
+        <p>Relayr FM is a music bot for Discord, and this website is its home page. In this policy, “Relayr”, “we” and “us” mean the people who run it, and “you” means anyone who uses the bot or visits the site.</p>
+        <p>This policy explains what information Relayr handles, why, how long it keeps it and who else is involved.</p>
+      </section>
+      <section id="collect">
+        <h2>What the bot uses</h2>
+        <p>When you use one of Relayr’s slash commands, Discord sends it what it needs to carry the command out:</p>
+        <ul>
+          <li><strong>Your Discord user ID</strong>, and the IDs of the server and channels the command was used in.</li>
+          <li><strong>What you typed into the command</strong>, such as the song name or link you gave <code>/play</code>.</li>
+          <li><strong>Your display name and avatar</strong>, which appear on the “Now playing” card next to songs you requested.</li>
+        </ul>
+        <p>Relayr uses this only to run the command: to join the voice channel you’re in, find and play the song, and show who asked for it.</p>
+        <h3>What it doesn’t collect</h3>
+        <ul>
+          <li><strong>Your messages.</strong> Relayr responds only to its own slash commands. It doesn’t have access to read ordinary chat messages.</li>
+          <li><strong>Your voice.</strong> Relayr joins voice channels deafened. It doesn’t receive, listen to or record anything anyone says.</li>
+          <li><strong>Anything else about you</strong>, such as your email address, IP address, payment details, friends list or the other servers you’re in.</li>
+        </ul>
+      </section>
+      <section id="keep">
+        <h2>How long it’s kept</h2>
+        <p>Relayr has no database. It doesn’t keep a profile of you, a history of what you’ve played or anything else between sessions.</p>
+        <ul>
+          <li><strong>The queue</strong>, including who requested each song, is held in the bot’s memory only while it’s playing in your server. It’s erased when Relayr leaves the voice channel, which happens when someone uses <code>/stop</code>, when everyone else leaves, or after five minutes with nothing queued. It’s also erased whenever the bot restarts.</li>
+          <li><strong>Audio files.</strong> Shortly before a song plays, its audio is downloaded to the bot’s server so it plays smoothly. Each file is deleted once the song has finished, and any that remain are deleted when Relayr leaves the channel.</li>
+          <li><strong>Technical logs.</strong> The server running Relayr keeps logs to help find and fix problems. They can include song names and search terms, server IDs and error messages. They don’t record who ran a command, and they never include message content or voice. Logs are used only to keep Relayr working.</li>
+        </ul>
+      </section>
+      <section id="share">
+        <h2>Who else is involved</h2>
+        <p>Relayr doesn’t sell, rent or trade information to anyone, and it doesn’t show ads. To work at all, though, it relies on a few other services:</p>
+        <ul>
+          <li><strong>Discord.</strong> Commands, and the messages Relayr sends back, travel through Discord and are covered by <a href="https://discord.com/privacy">Discord’s privacy policy</a>.</li>
+          <li><strong>Music services.</strong> To play a song, Relayr’s server sends the song name or link to services such as SoundCloud, YouTube and Bandcamp, and fetches the audio from them. When you paste a Spotify link, it asks Spotify for the list of tracks. These requests come from Relayr’s server, not from you, so these services don’t receive your Discord ID or anything else that identifies you.</li>
+          <li><strong>Hosting.</strong> Relayr runs on a server rented from a hosting provider, which stores the bot’s files and its logs.</li>
+        </ul>
+      </section>
+      <section id="website">
+        <h2>This website</h2>
+        <p>This site is a set of plain web pages hosted on GitHub Pages. It sets no cookies and has no analytics, trackers or ads.</p>
+        <p>Like any web host, GitHub may record technical details of visits, such as your IP address, to keep its service secure. That’s covered by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>.</p>
+        <p>The site’s fonts load from Google Fonts, so your browser connects to Google’s servers to download them. See <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</p>
+      </section>
+      <section id="choices">
+        <h2>Your choices</h2>
+        <ul>
+          <li><strong>Stop it playing</strong> at any time with <code>/stop</code>.</li>
+          <li><strong>Remove Relayr from a server</strong> you manage, in Server Settings under Integrations. It then receives nothing more from that server.</li>
+          <li><strong>Ask about your data.</strong> Because the queue and audio aren’t kept after a session, there’s normally nothing held that’s tied to you. If you want something checked or removed from the logs, contact us with the server ID involved and we’ll look into it.</li>
+        </ul>
+      </section>
+      <section id="children">
+        <h2>Age requirements</h2>
+        <p>Discord requires its users to be at least 13, or older where local law sets a higher age. Relayr is intended for people who meet Discord’s age requirements, and doesn’t knowingly collect anything further from anyone.</p>
+      </section>
+      <section id="changes">
+        <h2>Changes to this policy</h2>
+        <p>If what Relayr does with information changes, this page will be updated and the effective date at the top will change with it. Keeping on using Relayr after an update means you accept the new version.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Questions about this policy, or requests about your data: <a href="mailto:CONTACT-EMAIL">CONTACT-EMAIL</a>.</p>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo.png" alt="" width="28" height="28"><span>Relayr FM</span></a>
+    <nav aria-label="Footer">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#commands">Commands</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+    <p class="legal">Relayr FM isn't affiliated with or endorsed by Discord, Spotify, SoundCloud, YouTube or Bandcamp.</p>
+  </div>
+</footer>
+</body>
+</html>

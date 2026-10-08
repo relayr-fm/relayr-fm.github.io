@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service — Relayr FM</title>
+<meta name="description" content="The terms for using the Relayr FM Discord music bot.">
+<meta name="theme-color" content="#0E0A05">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0E0A05;--bg-2:#140E07;--surface:#1B130A;
+    --line:rgba(255,236,210,.08);--line-2:rgba(255,236,210,.14);
+    --amber:#FF9D00;--amber-hi:#FFB740;--amber-deep:#C26F00;
+    --text:#FBF6EE;--text-2:#C9BBA6;--text-3:#8E7F6A;
+    --display:"Bricolage Grotesque","Manrope",system-ui,sans-serif;
+    --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --wrap:72rem;--gutter:clamp(1.1rem,4vw,2.5rem);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--bg);color:var(--text);font:500 17px/1.7 var(--body);-webkit-font-smoothing:antialiased}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:-.02em;line-height:1.1;font-weight:700;text-wrap:balance}
+  p{margin:0;text-wrap:pretty}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gutter)}
+  :focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+
+  .btn{display:inline-flex;align-items:center;gap:.6rem;font:700 .92rem/1 var(--body);text-decoration:none;
+    padding:.7rem 1.15rem;border-radius:999px;white-space:nowrap;transition:transform .15s ease, box-shadow .2s ease}
+  .btn-primary{background:linear-gradient(180deg,var(--amber-hi),var(--amber));color:#1E1200;
+    box-shadow:0 1px 0 rgba(255,255,255,.35) inset, 0 10px 30px -8px rgba(255,157,0,.55)}
+  .btn-primary:hover{transform:translateY(-1px)}
+  .btn svg{width:1.1em;height:1.1em}
+
+  .nav{position:sticky;top:0;z-index:50;background:rgba(14,10,5,.72);
+    backdrop-filter:saturate(140%) blur(16px);-webkit-backdrop-filter:saturate(140%) blur(16px);
+    border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;gap:1rem;height:4.25rem}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font:700 1.15rem/1 var(--display);letter-spacing:-.01em}
+  .brand img{width:2.1rem;height:2.1rem;border-radius:9px}
+  .nav-links{margin-left:auto;display:flex;align-items:center;gap:.4rem}
+  .nav-links a:not(.btn){color:var(--text-2);text-decoration:none;font-weight:600;font-size:.95rem;padding:.55rem .85rem;border-radius:999px}
+  .nav-links a:not(.btn):hover{color:var(--text);background:rgba(255,236,210,.06)}
+  .nav .btn{margin-left:.4rem}
+  @media (max-width:52rem){ .nav-links a:not(.btn){display:none} }
+
+  /* ---------- document ---------- */
+  .doc-head{padding-block:clamp(3rem,7vw,5rem) 2.2rem;position:relative}
+  .doc-head::before{content:"";position:absolute;z-index:-1;inset:-6rem 0 auto auto;width:min(46rem,100vw);aspect-ratio:1;
+    background:radial-gradient(closest-side, rgba(255,157,0,.16), transparent 70%)}
+  .doc-head h1{font-size:clamp(2.6rem,6vw,4.4rem);font-weight:800;letter-spacing:-.026em}
+  .doc-head .meta{margin-top:.9rem;color:var(--text-3);font-size:.95rem}
+  .doc-head .switch{margin-top:1.2rem;color:var(--text-2);font-size:.95rem}
+  .doc-head .switch a{color:var(--amber-hi);text-underline-offset:3px}
+
+  .short{margin-top:2rem;max-width:44rem;border-radius:20px;padding:1.5rem 1.6rem 1.6rem;
+    background:linear-gradient(180deg,rgba(255,157,0,.09),rgba(255,157,0,.03));
+    box-shadow:0 0 0 1px rgba(255,157,0,.22) inset}
+  .short h2{font-size:1.15rem;letter-spacing:-.01em}
+  .short ul{margin:.85rem 0 0;padding:0;list-style:none;display:grid;gap:.55rem}
+  .short li{position:relative;padding-left:1.6rem;color:var(--text)}
+  .short li::before{content:"";position:absolute;left:.15rem;top:.62em;width:.5rem;height:.5rem;border-radius:50%;background:var(--amber)}
+
+  .doc{display:grid;grid-template-columns:15rem minmax(0,44rem);gap:clamp(2rem,5vw,4.5rem);
+    padding-block:1.5rem clamp(4rem,8vw,6rem);align-items:start}
+  @media (max-width:64rem){ .doc{grid-template-columns:minmax(0,44rem)} .toc{display:none} }
+
+  .toc{position:sticky;top:6rem}
+  .toc h2{font:700 .82rem/1 var(--body);color:var(--text-3);letter-spacing:0;margin-bottom:.8rem}
+  .toc ol{margin:0;padding:0;list-style:none;display:grid;gap:.15rem;counter-reset:t}
+  .toc li{counter-increment:t}
+  .toc a{display:flex;gap:.6rem;text-decoration:none;color:var(--text-2);font-size:.92rem;font-weight:600;
+    padding:.38rem .6rem;border-radius:8px;line-height:1.35}
+  .toc a::before{content:counter(t);color:var(--text-3);font-variant-numeric:tabular-nums;min-width:1.1rem}
+  .toc a:hover{color:var(--text);background:rgba(255,236,210,.05)}
+
+  article{counter-reset:s}
+  article section{padding-block:1.9rem;border-top:1px solid var(--line);scroll-margin-top:5.5rem}
+  article section:first-child{border-top:0;padding-top:.4rem}
+  article h2{font-size:clamp(1.45rem,2.4vw,1.75rem);counter-increment:s;display:flex;gap:.7rem;align-items:baseline}
+  article h2::before{content:counter(s);font:700 .95rem/1 var(--body);color:var(--amber);min-width:1.2rem}
+  article h3{font-size:1.08rem;margin-top:1.4rem;letter-spacing:-.01em}
+  article p,article ul{margin-top:.9rem;color:var(--text-2)}
+  article ul{padding-left:1.2rem;display:grid;gap:.45rem}
+  article li::marker{color:var(--amber)}
+  article strong{color:var(--text);font-weight:700}
+  article a{color:var(--amber-hi);text-underline-offset:3px;text-decoration-thickness:1px}
+  article code{font:600 .9em ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--amber-hi);
+    background:rgba(255,157,0,.1);padding:.08rem .35rem;border-radius:5px}
+
+  footer{border-top:1px solid var(--line);padding-block:2.2rem 3rem;color:var(--text-3);font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 2rem}
+  footer .brand{font-size:1rem;color:var(--text)}
+  footer .brand img{width:1.7rem;height:1.7rem;border-radius:7px}
+  footer nav{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-left:auto}
+  footer nav a{text-decoration:none;color:var(--text-2)}
+  footer nav a:hover,footer nav a[aria-current]{color:var(--text)}
+  footer .legal{flex-basis:100%;font-size:.82rem;line-height:1.6}
+  .skip{position:absolute;left:-9999px;top:.6rem;z-index:200;background:var(--amber);color:#1E1200;padding:.6rem 1rem;border-radius:999px;font-weight:700}
+  .skip:focus{left:var(--gutter)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+</defs></svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo.png" alt="" width="34" height="34"><span>Relayr FM</span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#commands">Commands</a>
+      <a href="index.html#faq">FAQ</a>
+      <!-- PLACEHOLDER: same invite URL as on index.html -->
+      <a class="btn btn-primary" href="PASTE-INVITE-URL"><svg aria-hidden="true"><use href="#i-plus"/></svg>Add to Discord</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap doc-head">
+    <h1>Terms of Service</h1>
+    <p class="meta">Effective 8 October 2026</p>
+    <p class="switch">See also the <a href="privacy.html">Privacy Policy</a>.</p>
+    <div class="short">
+      <h2>The short version</h2>
+      <ul>
+          <li>Use Relayr in line with Discord’s own rules.</li>
+          <li>Don’t use it to break the law, harass anyone or disrupt the service.</li>
+          <li>Relayr plays music from other services. It doesn’t own or host any of it.</li>
+          <li>It’s provided as is, and it may change or go offline.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap doc">
+    <nav class="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <ol>
+          <li><a href="#agree">Agreeing to these terms</a></li>
+          <li><a href="#discord">Discord’s rules come first</a></li>
+          <li><a href="#use">Using Relayr properly</a></li>
+          <li><a href="#music">Music and other content</a></li>
+          <li><a href="#availability">Availability and changes</a></li>
+          <li><a href="#ending">Ending access</a></li>
+          <li><a href="#warranty">No warranty</a></li>
+          <li><a href="#liability">Limits on liability</a></li>
+          <li><a href="#names">Other companies’ names</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#updates">Changes to these terms</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+    <article>
+      <section id="agree">
+        <h2>Agreeing to these terms</h2>
+        <p>These terms cover your use of Relayr FM, the Discord music bot, and this website. In them, “Relayr”, “we” and “us” mean the people who run it, and “you” means anyone who uses it.</p>
+        <p>By adding Relayr to a server or using its commands, you agree to these terms. If you add it to a server, you’re also responsible for it being used there in line with them. If you don’t agree, don’t use Relayr, and remove it from any server you’ve added it to.</p>
+      </section>
+      <section id="discord">
+        <h2>Discord’s rules come first</h2>
+        <p>Relayr runs on Discord, so you must also follow <a href="https://discord.com/terms">Discord’s Terms of Service</a> and <a href="https://discord.com/guidelines">Community Guidelines</a> when you use it, including Discord’s minimum age requirement.</p>
+      </section>
+      <section id="use">
+        <h2>Using Relayr properly</h2>
+        <p>When you use Relayr, don’t:</p>
+        <ul>
+          <li>use it in a way that breaks the law where you are, including copyright law;</li>
+          <li>use it to harass, intimidate or disrupt other people, for example by flooding a queue or playing audio into a channel where it isn’t wanted;</li>
+          <li>try to overload, break or interfere with Relayr or the services it relies on, such as by sending commands automatically in bulk or deliberately exploiting bugs;</li>
+          <li>try to get access to any part of Relayr or the systems it runs on that isn’t meant for you.</li>
+        </ul>
+      </section>
+      <section id="music">
+        <h2>Music and other content</h2>
+        <p>Relayr doesn’t host, own, upload or sell music. When you ask for a song, it finds audio on third-party services and plays it in your voice channel. That content belongs to its owners, and the terms of the service it came from apply to it.</p>
+        <p>You’re responsible for what you ask Relayr to play. Audio is held only briefly while a song plays and deleted afterwards. If you own the rights to something and have a concern, contact us.</p>
+      </section>
+      <section id="availability">
+        <h2>Availability and changes</h2>
+        <p>Relayr is a project run in good faith, but it can’t promise to be available all the time. It may be slow, go offline, fail to find a particular song, or stop working with a music service if that service changes. Features may be added, changed or removed, and Relayr may be shut down at any time.</p>
+      </section>
+      <section id="ending">
+        <h2>Ending access</h2>
+        <p>We may stop Relayr working in a server, or for a particular user, if it’s being used in a way that breaks these terms or Discord’s rules. Where we can, we’ll do this without disrupting anyone else.</p>
+        <p>You can stop using Relayr at any time by removing it from your server.</p>
+      </section>
+      <section id="warranty">
+        <h2>No warranty</h2>
+        <p>Relayr is provided “as is” and “as available”. To the fullest extent the law allows, we make no promises of any kind about it, whether stated or implied, including that it will be reliable, error-free, uninterrupted or fit for any particular purpose.</p>
+      </section>
+      <section id="liability">
+        <h2>Limits on liability</h2>
+        <p>To the fullest extent the law allows, we aren’t liable for any indirect, incidental, special or consequential loss arising from your use of Relayr or your inability to use it, or for anything done by Discord or the third-party services Relayr relies on.</p>
+        <p>Nothing in these terms limits any rights you have that can’t legally be limited.</p>
+      </section>
+      <section id="names">
+        <h2>Other companies’ names</h2>
+        <p>Relayr FM isn’t affiliated with, endorsed by or sponsored by Discord, Spotify, SoundCloud, YouTube or Bandcamp. Their names are used only to describe which links Relayr can play, and they belong to their respective owners.</p>
+      </section>
+      <section id="privacy">
+        <h2>Privacy</h2>
+        <p>How Relayr handles information is explained in the <a href="privacy.html">Privacy Policy</a>, which forms part of these terms.</p>
+      </section>
+      <section id="updates">
+        <h2>Changes to these terms</h2>
+        <p>These terms may be updated from time to time. When they are, this page will change and so will the effective date at the top. Keeping on using Relayr after an update means you accept the new terms.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Questions about these terms: <a href="mailto:CONTACT-EMAIL">CONTACT-EMAIL</a>.</p>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo.png" alt="" width="28" height="28"><span>Relayr FM</span></a>
+    <nav aria-label="Footer">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#commands">Commands</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="terms.html" aria-current="page">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <p class="legal">Relayr FM isn't affiliated with or endorsed by Discord, Spotify, SoundCloud, YouTube or Bandcamp.</p>
+  </div>
+</footer>
+</body>
+</html>
