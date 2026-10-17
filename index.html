@@ -373,7 +373,9 @@
     box-shadow:0 18px 50px -12px rgba(255,157,0,.6)}
   .final h2{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;letter-spacing:-.026em}
   .final p{margin:1rem auto 0;color:var(--text-2);max-width:32rem;font-size:1.1rem}
-  .final .btn{margin-top:2rem}
+  .final-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem;margin-top:2rem}
+  .faq-more{margin:1.8rem auto 0;text-align:center;color:var(--text-2)}
+  .faq-more a{color:var(--amber-hi);text-underline-offset:3px;text-decoration-thickness:1px}
 
   /* ---------------- footer ---------------- */
   footer{border-top:1px solid var(--line);padding-block:2.2rem 3rem;color:var(--text-3);font-size:.9rem}
@@ -413,6 +415,7 @@
       <a href="#features">Features</a>
       <a href="#commands">Commands</a>
       <a href="#faq">FAQ</a>
+      <a href="https://discord.gg/RjPrq5bXXp" target="_blank" rel="noopener">Support</a>
       <!-- PLACEHOLDER: paste the bot's invite URL in every href="PASTE-INVITE-URL" -->
       <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1557418909554970714"><svg aria-hidden="true"><use href="#i-plus"/></svg>Add to Discord</a>
     </nav>
@@ -675,6 +678,7 @@
         </div>
       </details>
     </div>
+    <p class="faq-more">Didn't find your answer? <a href="https://discord.gg/RjPrq5bXXp" target="_blank" rel="noopener">Ask in the Relayr FM server</a>.</p>
   </div>
 </section>
 
@@ -683,7 +687,10 @@
     <img src="logo.png" alt="" width="72" height="72">
     <h2>Give your server a soundtrack.</h2>
     <p>Add Relayr FM in a couple of clicks and start playing.</p>
-    <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1557418909554970714"><svg aria-hidden="true"><use href="#i-plus"/></svg>Add to Discord</a>
+    <div class="final-ctas">
+      <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1557418909554970714"><svg aria-hidden="true"><use href="#i-plus"/></svg>Add to Discord</a>
+      <a class="btn btn-quiet" href="https://discord.gg/RjPrq5bXXp" target="_blank" rel="noopener">Join the support server</a>
+    </div>
   </div>
 </div>
 </main>
@@ -695,6 +702,7 @@
       <a href="#features">Features</a>
       <a href="#commands">Commands</a>
       <a href="#faq">FAQ</a>
+      <a href="https://discord.gg/RjPrq5bXXp" target="_blank" rel="noopener">Support server</a>
       <a href="terms.html">Terms</a>
       <a href="privacy.html">Privacy</a>
     </nav>
